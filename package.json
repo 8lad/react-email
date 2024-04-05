@@ -1,11 +1,13 @@
 {
   "dependencies": {
     "@react-email/components": "0.0.16",
+    "@react-email/render": "0.0.12",
+    "fs": "^0.0.1-security",
     "react-email": "2.1.1"
   },
   "scripts": {
     "dev": "email dev -p 3200",
-    "build": "email build",
+    "build": "tsc render/renderTemplate.ts && node build/renderTemplate.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky"
@@ -16,7 +18,8 @@
     "eslint": "^8.57.0",
     "eslint-plugin-prettier": "^5.1.3",
     "husky": "^9.0.11",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.4"
   },
   "license": "MIT"
 }

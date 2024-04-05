@@ -12,11 +12,11 @@
     "moduleResolution": "node", // Module resolution strategy
     "jsx": "react", // JSX parsing mode
     "declaration": false, // Don't generate type declaration files
-    "outDir": "build", // Output directory for generated JavaScript files (optional)
     "sourceMap": true, // Generate source maps
     "strictNullChecks": true, // Enable strict null checks
     "noImplicitAny": true, // Disallow implicit any type
     "experimentalDecorators": true // Allow experimental decorator syntax (if applicable)
   },
-  "include": ["emails"] // Include source files for compilation
+
+  "include": ["emails", "render"] // Include source files for compilation
 }

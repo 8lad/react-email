@@ -3,7 +3,7 @@ import * as React from "react";
 
 export default function Email() {
   return (
-    <Html>
+    <Html lang="en">
       <Button
         href="https://example.com"
         style={{ background: "#000", color: "#fff", padding: "12px 20px" }}
