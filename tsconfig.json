@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Target ECMAScript version for generated code (adjust if needed)
+    "lib": ["dom", "dom.iterable", "esnext"], // Standard library libraries
+    "allowJs": true, // Allow compiling JavaScript files
+    "skipLibCheck": true, // Skip type checking for built-in library files
+    "esModuleInterop": true, // Allow importing from CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules without a default export
+    "strict": true, // Enable strict mode for type checking
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file naming case
+    "module": "esnext", // Module system for generated code (adjust if needed)
+    "moduleResolution": "node", // Module resolution strategy
+    "jsx": "react", // JSX parsing mode
+    "declaration": false, // Don't generate type declaration files
+    "outDir": "build", // Output directory for generated JavaScript files (optional)
+    "sourceMap": true, // Generate source maps
+    "strictNullChecks": true, // Enable strict null checks
+    "noImplicitAny": true, // Disallow implicit any type
+    "experimentalDecorators": true // Allow experimental decorator syntax (if applicable)
+  },
+  "include": ["emails"] // Include source files for compilation
+}
