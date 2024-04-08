@@ -1,7 +1,7 @@
 import React from "react";
 import { ContentWrapper } from "../../_base/_ContentWrapper/ContentWrapper";
 import { StylesType } from "../../../_helpers/types";
-import { Hr, Img, Link, Text } from "@react-email/components";
+import { Hr, Img, Link, Section, Text } from "@react-email/components";
 import {
   baseTextStyles,
   centeredBlockStyles,
@@ -15,31 +15,37 @@ export const MainInfo = () => {
 
   return (
     <ContentWrapper additionalStyles={wrapperStyles}>
-      <Img
-        style={imageStyles}
-        src="https://picsum.photos/200/200"
-        alt="Random image instead of the logo"
-      />
-      <Text style={firstPharagraphStyles}>
-        Your Best account has been approved and you can now log in on to your
-        Best account.
-      </Text>
-      <Hr style={lineStyles} />
-      <Text style={secondPharagraphStyles}>
-        You can now access Best online or on any device by going to{" "}
-        <Link
-          style={productLinkStyles}
-          href="https://google.com"
-          target="_blank"
-        >
-          google.com
+      <Section style={sectionStyles}>
+        <Img
+          style={imageStyles}
+          src="https://picsum.photos/200/200"
+          alt="Random image instead of the logo"
+        />
+        <Text style={firstPharagraphStyles}>
+          Your Best account has been approved and you can now log in on to your
+          Best account.
+        </Text>
+        <Hr style={lineStyles} />
+        <Text style={secondPharagraphStyles}>
+          You can now access Best online or on any device by going to{" "}
+          <Link
+            style={productLinkStyles}
+            href="https://google.com"
+            target="_blank"
+          >
+            google.com
+          </Link>
+        </Text>
+        <Link style={actionLinkStyles} href="https://youtube.com">
+          Get started
         </Link>
-      </Text>
-      <Link style={actionLinkStyles} href="https://youtube.com">
-        Get started
-      </Link>
+      </Section>
     </ContentWrapper>
   );
+};
+
+const sectionStyles: StylesType = {
+  maxWidth: 579,
 };
 
 const imageStyles: StylesType = {
@@ -55,14 +61,12 @@ const firstPharagraphStyles: StylesType = {
   ...centeredBlockStyles,
   ...baseTextStyles,
   marginBottom: 25,
-  maxWidth: 579,
   textAlign: "center",
 };
 
 const secondPharagraphStyles: StylesType = {
   ...centeredBlockStyles,
   ...baseTextStyles,
-  maxWidth: 579,
   marginBottom: 58,
   textAlign: "center",
 };

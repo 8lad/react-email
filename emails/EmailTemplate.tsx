@@ -4,6 +4,7 @@ import { EmailHead } from "./_components/_base/_EmailHead/EmailHead";
 import { Header } from "./_components/_shared/_Header/Header";
 import { StylesType } from "./_helpers/types";
 import { MainInfo } from "./_components/_shared/_MainInfo/MainInfo";
+import { AppInfo } from "./_components/_shared/_AppInfo/AppInfo";
 
 export default function Email() {
   return (
@@ -13,6 +14,7 @@ export default function Email() {
         <Container style={containerStyles}>
           <Header />
           <MainInfo />
+          <AppInfo />
         </Container>
       </Body>
     </Html>
