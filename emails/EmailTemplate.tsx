@@ -3,6 +3,7 @@ import * as React from "react";
 import { EmailHead } from "./_components/_base/_EmailHead/EmailHead";
 import { Header } from "./_components/_shared/_Header/Header";
 import { StylesType } from "./_helpers/types";
+import { MainInfo } from "./_components/_shared/_MainInfo/MainInfo";
 
 export default function Email() {
   return (
@@ -11,6 +12,7 @@ export default function Email() {
       <Body style={bodyStyles}>
         <Container style={containerStyles}>
           <Header />
+          <MainInfo />
         </Container>
       </Body>
     </Html>
@@ -21,10 +23,13 @@ const bodyStyles: StylesType = {
   width: "100%",
   backgroundColor: "#E5E5E5",
   paddingTop: "146px",
+  overflowX: "hidden",
+  margin: 0,
 };
 
 const containerStyles: StylesType = {
   maxWidth: "1120px",
+  overflow: "hidden",
   width: "100%",
   margin: "0 auto",
   padding: "0 10px",

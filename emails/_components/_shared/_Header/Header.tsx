@@ -24,6 +24,7 @@ const imageStyles: StylesType = {
   height: "135px",
   margin: "0 auto 20px",
   borderRadius: "50%",
+  objectFit: "cover",
 };
 
 const titleStyles: StylesType = {
