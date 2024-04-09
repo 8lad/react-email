@@ -5,6 +5,7 @@ import { Header } from "./_components/_shared/_Header/Header";
 import { StylesType } from "./_helpers/types";
 import { MainInfo } from "./_components/_shared/_MainInfo/MainInfo";
 import { AppInfo } from "./_components/_shared/_AppInfo/AppInfo";
+import { Footer } from "./_components/_shared/_Footer/Footer";
 
 export default function Email() {
   return (
@@ -15,6 +16,7 @@ export default function Email() {
           <Header />
           <MainInfo />
           <AppInfo />
+          <Footer />
         </Container>
       </Body>
     </Html>
@@ -24,7 +26,8 @@ export default function Email() {
 const bodyStyles: StylesType = {
   width: "100%",
   backgroundColor: "#E5E5E5",
-  paddingTop: "146px",
+  paddingTop: "145px",
+  paddingBottom: "145px",
   overflowX: "hidden",
   margin: 0,
 };

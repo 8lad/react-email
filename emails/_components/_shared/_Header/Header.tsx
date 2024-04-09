@@ -11,8 +11,7 @@ export const Header = () => {
         alt="Random image instead of the logo"
       />
       <Heading as="h1" style={titleStyles}>
-        Hi <strong>James</strong>, your greate product account has been
-        approved!
+        Hi <strong>James</strong>, your Best product account has been approved!
       </Heading>
     </Section>
   );
