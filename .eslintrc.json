@@ -38,6 +38,7 @@
     "no-return-assign": "off",
     "prettier/prettier": 0,
     "no-await-in-loop": "off",
-    "no-console": "warn"
+    "no-console": "warn",
+    "@typescript-eslint/no-explicit-any": "warn"
   }
 }
