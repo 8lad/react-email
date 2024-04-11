@@ -2,12 +2,11 @@
   "dependencies": {
     "@react-email/components": "0.0.16",
     "@react-email/render": "0.0.12",
-    "fs": "^0.0.1-security",
     "react-email": "2.1.1"
   },
   "scripts": {
     "dev": "email dev -p 3200",
-    "build": "tsc render/renderTemplate.ts && node build/renderTemplate.js",
+    "build": "tsc && node build/render/renderTemplate.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky"

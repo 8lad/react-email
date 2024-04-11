@@ -1,5 +1,5 @@
 import { Column, Link, Row, Section, Text, Img } from "@react-email/components";
-import React from "react";
+import * as React from "react";
 import {
   SOCIAL_MEDIA_LINKS,
   baseTextStyles,

@@ -1,5 +1,5 @@
 import { Section } from "@react-email/components";
-import React from "react";
+import * as React from "react";
 import { StylesType } from "../../../_helpers/types";
 
 interface ContentWrapperProps {
