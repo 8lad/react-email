@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { ContentWrapper } from "../../_base/_ContentWrapper/ContentWrapper";
 import {
   Column,

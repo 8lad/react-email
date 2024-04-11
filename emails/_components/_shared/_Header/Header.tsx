@@ -1,5 +1,5 @@
 import { Img, Section, Heading } from "@react-email/components";
-import React from "react";
+import * as React from "react";
 import { StylesType } from "../../../_helpers/types";
 
 export const Header = () => {

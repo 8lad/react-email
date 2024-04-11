@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { ContentWrapper } from "../../_base/_ContentWrapper/ContentWrapper";
 import { StylesType } from "../../../_helpers/types";
 import { Hr, Img, Link, Section, Text } from "@react-email/components";
